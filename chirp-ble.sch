@@ -140,6 +140,7 @@
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
 <layer number="254" name="cooling" color="7" fill="1" visible="no" active="yes"/>
+<layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <description>Plant watering alarm v2.4</description>
@@ -10102,9 +10103,9 @@ Various common sizes : AA, AAA, 18650 (PRT-12895), 20mm coin cell and 12mm coin 
 <part name="C12" library="rcl" deviceset="C-EU" device="C0402" value="12pF"/>
 <part name="C13" library="rcl" deviceset="C-EU" device="C0402" value="12pF"/>
 <part name="FRAME1" library="frames" deviceset="A4L-LOC" device=""/>
-<part name="Y1" library="abracon" deviceset="CRYSTAL" device=".ABS07" value="ABS07-32.768KHZ-7 "/>
+<part name="Y1" library="abracon" deviceset="CRYSTAL" device=".ABS07" value="32.768K-CFPX217"/>
 <part name="GND9" library="SparkFun" deviceset="GND" device=""/>
-<part name="Q1" library="adafruit" deviceset="XTAL-4" device="-3225" value="ILCX13-FF5F18-32.0000"/>
+<part name="Q1" library="adafruit" deviceset="XTAL-4" device="-3225" value=" YIC 32.00M-SMDXT324 "/>
 <part name="TP1" library="testpad" deviceset="TP" device="B1,27" value="TPB1,27"/>
 <part name="TP2" library="testpad" deviceset="TP" device="B1,27" value="TPB1,27"/>
 <part name="TP3" library="testpad" deviceset="TP" device="B1,27" value="TPB1,27"/>
@@ -10172,7 +10173,7 @@ Various common sizes : AA, AAA, 18650 (PRT-12895), 20mm coin cell and 12mm coin 
 </instance>
 <instance part="C11" gate="G$1" x="170.18" y="50.8" smashed="yes" rot="MR270">
 <attribute name="NAME" x="173.736" y="46.101" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="169.164" y="45.339" size="1.778" layer="96" rot="MR180"/>
+<attribute name="VALUE" x="173.736" y="43.561" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="C12" gate="G$1" x="25.4" y="63.5" smashed="yes" rot="MR90">
 <attribute name="NAME" x="24.384" y="68.199" size="1.778" layer="95" rot="MR180"/>
@@ -10188,8 +10189,8 @@ Various common sizes : AA, AAA, 18650 (PRT-12895), 20mm coin cell and 12mm coin 
 </instance>
 <instance part="GND9" gate="1" x="17.78" y="48.26"/>
 <instance part="Q1" gate="G$1" x="165.1" y="58.42" smashed="yes" rot="R90">
-<attribute name="NAME" x="161.29" y="55.88" size="1.27" layer="95" font="vector" rot="R90"/>
-<attribute name="VALUE" x="170.18" y="54.61" size="1.27" layer="96" font="vector" rot="R90"/>
+<attribute name="NAME" x="162.052" y="53.086" size="1.27" layer="95" font="vector"/>
+<attribute name="VALUE" x="159.004" y="47.752" size="1.27" layer="96" font="vector" rot="R90"/>
 </instance>
 <instance part="L1" gate="G$1" x="162.56" y="27.94" smashed="yes">
 <attribute name="NAME" x="162.56" y="30.48" size="1.778" layer="95"/>
@@ -10200,7 +10201,7 @@ Various common sizes : AA, AAA, 18650 (PRT-12895), 20mm coin cell and 12mm coin 
 </instance>
 <instance part="GND10" gate="1" x="147.32" y="15.24"/>
 <instance part="GND11" gate="1" x="170.18" y="15.24"/>
-<instance part="GND13" gate="1" x="177.8" y="45.72"/>
+<instance part="GND13" gate="1" x="182.88" y="45.72"/>
 <instance part="GND16" gate="1" x="127" y="10.16" rot="R90"/>
 </instances>
 <busses>
@@ -10305,20 +10306,20 @@ Various common sizes : AA, AAA, 18650 (PRT-12895), 20mm coin cell and 12mm coin 
 <segment>
 <pinref part="C10" gate="G$1" pin="2"/>
 <pinref part="GND13" gate="1" pin="GND"/>
-<wire x1="175.26" y1="66.04" x2="177.8" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="177.8" y1="66.04" x2="177.8" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="66.04" x2="182.88" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="66.04" x2="182.88" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="C11" gate="G$1" pin="2"/>
-<wire x1="177.8" y1="63.5" x2="177.8" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="177.8" y1="53.34" x2="177.8" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="177.8" y1="50.8" x2="177.8" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="175.26" y1="50.8" x2="177.8" y2="50.8" width="0.1524" layer="91"/>
-<junction x="177.8" y="50.8"/>
+<wire x1="182.88" y1="63.5" x2="182.88" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="53.34" x2="182.88" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="50.8" x2="182.88" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="50.8" x2="182.88" y2="50.8" width="0.1524" layer="91"/>
+<junction x="182.88" y="50.8"/>
 <pinref part="Q1" gate="G$1" pin="G2"/>
-<wire x1="172.72" y1="63.5" x2="177.8" y2="63.5" width="0.1524" layer="91"/>
-<junction x="177.8" y="63.5"/>
+<wire x1="172.72" y1="63.5" x2="182.88" y2="63.5" width="0.1524" layer="91"/>
+<junction x="182.88" y="63.5"/>
 <pinref part="Q1" gate="G$1" pin="G1"/>
-<wire x1="172.72" y1="53.34" x2="177.8" y2="53.34" width="0.1524" layer="91"/>
-<junction x="177.8" y="53.34"/>
+<wire x1="172.72" y1="53.34" x2="182.88" y2="53.34" width="0.1524" layer="91"/>
+<junction x="182.88" y="53.34"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="VSS@3"/>
