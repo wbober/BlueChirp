@@ -10465,13 +10465,6 @@ Various common sizes : AA, AAA, 18650 (PRT-12895), 20mm coin cell and 12mm coin 
 <label x="96.52" y="86.36" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
-<net name="CLK_OUT" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="P0.26"/>
-<wire x1="101.6" y1="81.28" x2="101.6" y2="86.36" width="0.1524" layer="91"/>
-<label x="101.6" y="86.36" size="1.27" layer="95" rot="R90" xref="yes"/>
-</segment>
-</net>
 <net name="LED_A" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="NFC2/P0.10"/>
@@ -10484,6 +10477,12 @@ Various common sizes : AA, AAA, 18650 (PRT-12895), 20mm coin cell and 12mm coin 
 <pinref part="U1" gate="G$1" pin="P0.17"/>
 <wire x1="93.98" y1="15.24" x2="93.98" y2="10.16" width="0.1524" layer="91"/>
 <label x="93.98" y="10.16" size="1.27" layer="95" rot="R270" xref="yes"/>
+</segment>
+</net>
+<net name="CLK_OUT" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="P0.04/AIN2"/>
+<wire x1="55.88" y1="48.26" x2="45.72" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
