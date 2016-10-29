@@ -1,8 +1,11 @@
-PlantWateringAlarm
-==================
+BlueChirp!
+==========
 
-A soil moisture level sensor based on ATTINY44. Uses capacitive sensing.
+A soil moisture sensor based on nRF52. Uses capacitive sensing for measurements
+and Bluetooth Low Energy to send the readings.
 
-More info at http://wemakethings.net/chirp
+The is work in progess. PCB is done and ordered, firmware yet to come.
 
-Contact: mic a wemakethings.net
+Based on Chirp! designed by Albertas Mickėnas. Find out more here:
+https://github.com/Miceuz/PlantWateringAlarm
+https://wemakethings.net/chirp/
